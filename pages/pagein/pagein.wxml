@@ -1,0 +1,13 @@
+<!-- <view>
+  <text>{{pageData.title}}</text>
+</view> -->
+<view class='pageInImg'>
+  <block wx:for="{{pageData.content_img}}" wx:key="imgtxt">
+    <image style='width:750rpx;' mode='widthFix' src='http://www.iyguoji.com/{{item}}'></image>
+  </block>
+</view>
+
+<view class='phone' bindtap="call_me">
+  <image src='../images/tel.png'></image>
+</view>
+

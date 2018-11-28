@@ -1,0 +1,99 @@
+<!--index.wxml-->
+<view class='page' catchtouchmove="{{isScroll}}">
+<view class="container">
+  <swiper style="height:{{imgheights[current]}}rpx;" indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{sliderImg}}" wx:key="slideImg">
+    <navigator url="{{item.link}}">
+      <swiper-item>
+        <image style="height:{{imgheights[current]}}rpx;width:{{imgwidth}}rpx;" src="http://www.iyguoji.com/Upload/{{item.imgName_750_463}}" mode="aspectFit" class="slide-image" bindload="imageLoad" />
+      </swiper-item>
+    </navigator>
+  </block>
+</swiper>
+</view>
+
+<view class='select_all'>
+<view class='select_list'>
+  <view class='select_block' bindtap="drownList1">
+    <view class='select_text'>{{firstSelect1}}</view>
+    <image class="select_icon {{selecIcon1 ? 'rotateIcon' :''}}" src='../images/down.svg'></image>
+  </view>
+  <view class='select_block' bindtap="drownList2">
+    <view class='select_text'>{{firstSelect2}}</view>
+    <image class="select_icon {{selecIcon2 ? 'rotateIcon' :''}}" src='../images/down.svg'></image>
+  </view>
+  <view class='select_block' bindtap="drownList3">
+    <view class='select_text'>{{firstSelect3}}</view>
+    <image class="select_icon {{selecIcon3 ? 'rotateIcon' :''}}" src='../images/down.svg'></image>
+  </view>
+  <view class='select_block' bindtap="drownList4">
+    <view class='select_text'>{{firstSelect4}}</view>
+    <image class="select_icon {{selecIcon4 ? 'rotateIcon' :''}}" src='../images/down.svg'></image>
+  </view>
+  <view class='select_block' bindtap="drownList5">
+    <view class='select_text'>{{firstSelect5}}</view>
+    <image class="select_icon {{selecIcon5 ? 'rotateIcon' :''}}" src='../images/down.svg'></image>
+  </view>
+</view>
+
+<view>
+  <view class="select_box" hidden="{{selectArray1}}">
+    <scroll-view class="scroll-view_H" scroll-y>
+      <view bindtap='mySelect1' class="scroll-view-item_H" data-me="设计师" data-id="">全部</view>
+      <block wx:for="{{deger}}" wx:key="Select1">
+        <view bindtap='mySelect1' class="scroll-view-item_H" data-me="{{item.name}}" data-id="{{item.id}}">{{item.name}}</view>
+      </block>
+    </scroll-view>
+  </view>
+  <view class="select_box" hidden="{{selectArray2}}">
+    <scroll-view class="scroll-view_H" scroll-y>
+      <view bindtap='mySelect2' class="scroll-view-item_H" data-me="楼盘" data-id="">全部</view>
+      <block wx:for="{{loupan}}" wx:key="Select2">
+        <view bindtap='mySelect2' class="scroll-view-item_H" data-me="{{item.name}}" data-id="{{item.id}}">{{item.name}}</view>
+      </block>
+    </scroll-view>
+  </view>
+  <view class="select_box" hidden="{{selectArray3}}">
+    <scroll-view class="scroll-view_H" scroll-y>
+      <view bindtap='mySelect3' class="scroll-view-item_H" data-me="风格" data-id="">全部</view>
+      <block wx:for="{{style}}" wx:key="Select3">
+        <view bindtap='mySelect3' class="scroll-view-item_H" data-me="{{item.dataName}}" data-id="{{item.id}}">{{item.dataName}}</view>
+      </block>
+    </scroll-view>
+  </view>
+  <view class="select_box" hidden="{{selectArray4}}">
+    <scroll-view class="scroll-view_H" scroll-y>
+      <view bindtap='mySelect4' class="scroll-view-item_H" data-me="空间" data-id="">全部</view>
+      <block wx:for="{{spaces}}" wx:key="Select4">
+        <view bindtap='mySelect4' class="scroll-view-item_H" data-me="{{item.dataName}}" data-id="{{item.id}}">{{item.dataName}}</view>
+      </block>
+    </scroll-view>
+  </view>
+  <view class="select_box" hidden="{{selectArray5}}">
+    <scroll-view class="scroll-view_H" scroll-y>
+      <view bindtap='mySelect5' class="scroll-view-item_H" data-me="空间" data-id="">全部</view>
+      <block wx:for="{{area}}" wx:key="Select5">
+        <view bindtap='mySelect5' class="scroll-view-item_H" data-me="{{item.dataName}}" data-id="{{item.id}}">{{item.dataName}}</view>
+      </block>
+    </scroll-view>
+  </view>
+</view>
+
+</view>
+
+
+<view class='list_case'>
+  <block wx:for="{{listData}}" wx:key="list_case">
+    <navigator class='list_case_in' url="/pages/pagein/pagein?id={{item.id}}">
+      <image src='http://www.iyguoji.com/Upload/{{item.imgName_730_450}}'></image>
+      <text>{{item.loupan_name}}</text>
+    </navigator> 
+  </block>
+</view> 
+</view>
+
+<view class='phone' bindtap="call_me">
+  <image src='../images/tel.png'></image>
+</view>
+

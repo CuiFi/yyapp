@@ -1,0 +1,15 @@
+/**app.wxss**/
+.container {
+}
+/* phone */
+.phone{
+  position: fixed;
+  top: 850rpx;
+  right: 0;
+  
+}
+.phone image{
+  display: block;
+  width: 100rpx;
+  height: 100rpx;
+}

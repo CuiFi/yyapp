@@ -1,0 +1,116 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+} 
+swiper{
+  width: 100%;
+  /* height: 172.5px; */
+}
+.slide-image{
+  display: block;
+  width: 750rpx;
+  height: auto;
+  /* height:463rpx; */
+}
+
+/* select */
+.select_all{
+  position: relative;
+}
+
+.select_list{
+  display: flex;
+  border-bottom: 1px solid #eee;
+}
+.select_list .select_block{
+  position: relative;
+  flex-grow:1;
+  text-align: center;
+  font-size:26rpx;
+  height:60rpx;
+  line-height:60rpx;
+}
+.select_text{
+  display: inline-block;
+  margin-right: 5rpx
+}
+.select_block .select_icon{
+  width:16rpx;
+  height:15rpx;
+  transition: All 0.4s ease;  
+  -webkit-transition: All 0.4s ease;
+}
+
+.select_box{
+  position: absolute;
+  top: 60rpx;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.scroll-view_H{
+  position: absolute;
+  width:100%;
+  height:400rpx;
+  top: 0;
+  left: 0;
+  text-indent: 30rpx;
+}
+.scroll-view-item_H{
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+.rotateIcon{
+  transform: rotate(180deg); 
+}
+.dn{
+  display: none;
+}
+
+/* list_case */
+.list_case_in{
+  padding: 10px;
+}
+.list_case_in image{
+  width: 100%;
+  border-radius: 10px;
+}
+.list_case{
+  text-align: center;
+}
+.list_case text{
+  font-size: 30rpx;
+}
+
+/* phone */
+.phone{
+  position: fixed;
+  top: 850rpx;
+  right: 0;
+  
+}
+.phone image{
+  display: block;
+  width: 100rpx;
+  height: 100rpx;
+}

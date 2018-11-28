@@ -1,0 +1,26 @@
+<view>
+  <image class='top_part' mode="widthFix" src='../images/about_01.jpg'></image>
+  <image class='top_part' mode="widthFix" src='../images/about_02.jpg'></image>
+  <image class='top_part' mode="widthFix" src='../images/about_03.jpg'></image>
+  <image class='top_part' mode="widthFix" src='../images/about_04.jpg'></image>
+  <image class='top_part' mode="widthFix" src='../images/about_05.jpg'></image>
+  <image class='top_part' mode="widthFix" src='../images/about_06.jpg'></image>
+  <image class='top_part' mode="widthFix" src='../images/about_07.jpg'></image>
+</view>
+<view class='people'>
+  <block wx:for="{{peopleImg}}" wx:key="peopleImg">
+    <image mode='widthFix' src='http://www.iyguoji.com/Upload/{{item.imgName_320_420}}'></image>
+  </block>
+</view>
+<view>
+  <image class='top_part' mode='widthFix' src='../images/about_b_01.jpg'></image>
+  <image class='top_part' mode='widthFix' src='../images/about_b_02.jpg'></image>
+  <image class='top_part' mode='widthFix' src='../images/about_b_03.jpg'></image>
+  <image class='top_part' mode='widthFix' src='../images/about_b_04.jpg'></image>
+  <image class='top_part' mode='widthFix' src='../images/about_b_05.jpg'></image>
+  <image class='top_part' mode='widthFix' src='../images/about_b_06.jpg'></image>
+</view>
+
+<view class='phone' bindtap="call_me">
+  <image src='../images/tel.png'></image>
+</view>

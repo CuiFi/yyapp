@@ -1,0 +1,13 @@
+{
+  "pages":[   
+    "pages/index/index",
+    "pages/pagein/pagein",
+    "pages/about/about"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "易墅生活",
+    "navigationBarTextStyle":"black"
+  }
+}
